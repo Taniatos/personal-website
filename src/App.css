@@ -1,0 +1,9 @@
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --accent-font: 'Allura', cursive;
+}
+html, 
+body{
+    height: 100%;
+    font-family: var(--main-font);
+}
