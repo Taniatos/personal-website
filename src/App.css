@@ -1,6 +1,8 @@
 :root {
     --main-font: 'Montserrat', sans-serif;
     --accent-font: 'Allura', cursive;
+    --main-white: #F3F3FD;
+    --main-black: #0A0A10;
 }
 html, 
 body{
