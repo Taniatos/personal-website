@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./MainScreen.css";
 
-const MainScreen = () => {
+const MainScreen = ({ onRouteChange }) => {
   const [loaded, setLoaded] = useState(false);
   const [animateBtn, setAnimateBtn] = useState(false);
   const [animateH3, setAnimateH3] = useState(false);
@@ -11,8 +11,6 @@ const MainScreen = () => {
   useEffect(() => {
     const loadTimer = setTimeout(() => {
       setLoaded(true);
-
-      // Start the animation sequence
       setAnimateBtn(true);
       const timerH3 = setTimeout(() => setAnimateH3(true), 100);
       const timerH2 = setTimeout(() => setAnimateH2(true), 200);
@@ -32,6 +30,10 @@ const MainScreen = () => {
     };
   }, []);
 
+  const goToSecondScreen = () => {
+    onRouteChange("second"); // we're using 'second' as the route for SecondScreen
+  };
+
   if (!loaded) {
     return <div className="while-loading"></div>;
   }
@@ -45,17 +47,22 @@ const MainScreen = () => {
       <h3 className={`home-h3 ${animateH3 ? "animate" : ""}`}>
         Front-End Developer & UI/UX Designer
       </h3>
-      <a
-        href="https://www.google.com/"
+      <button
+        onClick={goToSecondScreen}
         className={`home-btn ${animateBtn ? "animate" : ""}`}
         id="animated-btn"
       >
-        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        <svg
+          width="180px"
+          height="60px"
+          viewBox="0 0 180 60"
+          className="border"
+        >
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
         </svg>
         <span>More</span>
-      </a>
+      </button>
     </section>
   );
 };
