@@ -33,6 +33,7 @@ header {
   width: 35px;
   height: 35px;
   margin-right: 10px;
+  margin-top: 12px;
 }
 
 .logo-section .logo-text {
@@ -79,11 +80,21 @@ header {
 @media only screen and (max-width: 420px) {
   .sidebar {
     padding: 8px;
+    height: auto; 
+    overflow: visible;
   }
+ 
   .sidebar.collapsed {
     width: 24px;
   }
-  .sidebar.collapsed .logo-section{
+  .sidebar.collapsed .logo-section {
     display: none;
   }
+  .menu-links {
+     margin-top: 80px;
+  }
+    .logo-section .logo-text {
+    display: none; 
+  }
+  
 }
