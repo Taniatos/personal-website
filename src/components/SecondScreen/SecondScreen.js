@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import "./SecondScreen.css";
+import Sidebar from "./Sidebar";
 
 const SecondScreen = () => {
-  return <h1>hello</h1>;
+  const [content, setContent] = useState("");
+
+  const handleMenuClick = (menuItem) => {
+    setContent(menuItem);
+  };
+
+  return (
+    <section className="screen-container">
+      <Sidebar onMenuClick={handleMenuClick} />
+      <div className="main-content">
+        <h1 className="second-screen-h1">Hello</h1>
+      </div>
+    </section>
+  );
 };
+
 export default SecondScreen;

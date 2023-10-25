@@ -1,0 +1,89 @@
+.sidebar {
+  position: relative;
+  width: 250px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, #000105 9.43%, #0a2d40 99.97%);
+  transition: 0.3s;
+  padding: 24px;
+  border-radius: 0px 40px 40px 0px;
+  box-shadow: 3px 0px 16px rgba(0, 0, 0, 0.369);
+}
+
+.sidebar.collapsed {
+  width: 32px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo-section,
+.logo-section .logo,
+.logo-section .logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo-section .logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.logo-section .logo-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+
+.toggle {
+  position: absolute;
+  top: 40px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.6 s ease-in-out;
+  z-index: 10;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+}
+
+.menu-links li {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  color: var(--main-white);
+}
+
+.menu-links li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.sidebar.collapsed .toggle {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 420px) {
+  .sidebar {
+    padding: 8px;
+  }
+  .sidebar.collapsed {
+    width: 24px;
+  }
+  .sidebar.collapsed .logo-section{
+    display: none;
+  }
+}
