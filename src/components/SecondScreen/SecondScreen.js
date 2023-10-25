@@ -14,6 +14,7 @@ const SecondScreen = () => {
       <Sidebar onMenuClick={handleMenuClick} />
       <div className="main-content">
         <h1 className="second-screen-h1">Hello</h1>
+        <p>{content}</p>
       </div>
     </section>
   );
