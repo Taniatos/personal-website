@@ -60,11 +60,18 @@ header {
 }
 
 .menu-links li {
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
   padding: 12px 0;
   color: var(--main-white);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all ease-in-out 300ms;
+}
+.menu-links li:hover {
+  transform: scaleX(1.07);
+  color: aquamarine;
 }
 
 .menu-links li img {
