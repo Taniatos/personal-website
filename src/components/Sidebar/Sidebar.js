@@ -26,13 +26,13 @@ const Sidebar = () => {
   return (
     <nav className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       <header>
-        <div className="logo-section">
+        <Link to="/second/about" className="logo-section">
           {isCollapsed ? (
             <span className="logo-text-collapsed">TK</span>
           ) : (
             <span className="logo-text-expanded">Tetiana Korchynska</span>
           )}
-        </div>
+        </Link>
         <img
           className="toggle"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/964/original/icon-close.png?1698267131"

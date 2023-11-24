@@ -27,6 +27,12 @@ header {
 .logo-section .logo-text {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+.logo-section,
+.logo-section .logo-text a {
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .logo-section .logo-text-expanded {
