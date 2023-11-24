@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Sidebar.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -7,8 +7,9 @@ import {
   faBriefcase,
   faPaintbrush,
 } from "@fortawesome/free-solid-svg-icons";
+import "./Sidebar.css";
 
-const Sidebar = ({ onMenuClick }) => {
+const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(window.innerWidth < 1160);
 
   const toggleSidebar = () => setIsCollapsed(!isCollapsed);
@@ -40,21 +41,29 @@ const Sidebar = ({ onMenuClick }) => {
         />
       </header>
       <ul className="menu-links">
-        <li onClick={() => onMenuClick("about")}>
-          <FontAwesomeIcon icon={faUser} className="menu-icon" />
-          {!isCollapsed && "About"}
+        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+          <Link to="/second/about">
+            <FontAwesomeIcon icon={faUser} className="menu-icon" />
+            {!isCollapsed && "About"}
+          </Link>
         </li>
-        <li onClick={() => onMenuClick("contacts")}>
-          <FontAwesomeIcon icon={faPaperPlane} className="menu-icon" />
-          {!isCollapsed && "Contacts"}
+        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+          <Link to="/second/contacts">
+            <FontAwesomeIcon icon={faPaperPlane} className="menu-icon" />
+            {!isCollapsed && "Contacts"}
+          </Link>
         </li>
-        <li onClick={() => onMenuClick("works")}>
-          <FontAwesomeIcon icon={faBriefcase} className="menu-icon" />
-          {!isCollapsed && "Works"}
+        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+          <Link to="/second/works">
+            <FontAwesomeIcon icon={faBriefcase} className="menu-icon" />
+            {!isCollapsed && "Works"}
+          </Link>
         </li>
-        <li onClick={() => onMenuClick("designs")}>
-          <FontAwesomeIcon icon={faPaintbrush} className="menu-icon" />
-          {!isCollapsed && "Designs"}
+        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+          <Link to="/second/designs">
+            <FontAwesomeIcon icon={faPaintbrush} className="menu-icon" />
+            {!isCollapsed && "Designs"}
+          </Link>
         </li>
       </ul>
     </nav>

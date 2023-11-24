@@ -1,26 +1,19 @@
-import React, { useState } from "react";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainScreen from "./components/MainScreen/MainScreen";
 import SecondScreen from "./components/SecondScreen/SecondScreen";
+import "./App.css";
 
 function App() {
- 
-  const [route, setRoute] = useState("main");
-
- 
-  const handleRouteChange = (newRoute) => {
-    setRoute(newRoute);
-  };
-
   return (
-    <div className="App">
-      {}
-      {route === "main" ? (
-        <MainScreen onRouteChange={handleRouteChange} />
-      ) : (
-        <SecondScreen />
-      )}
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<MainScreen />} />
+          <Route path="/second/*" element={<SecondScreen />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

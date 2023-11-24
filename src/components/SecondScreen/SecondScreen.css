@@ -1,14 +1,14 @@
 .screen-container {
   display: flex;
   position: relative;
-  z-index: 0; 
+  height: 100vh; 
 }
 
 .main-content {
   flex-grow: 1;
   padding: 20px;
   overflow-y: auto;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .second-screen-h1 {
@@ -16,13 +16,13 @@
 }
 
 @media screen and (max-width: 1160px) {
-  .main-content {
-    margin-left: 80px; 
+  .sidebar.collapsed + .main-content {
+    margin-left: 50px; 
   }
 }
 
 @media screen and (min-width: 1161px) {
-  /* .main-content {
-    margin-left: 250px;
-  } */
+  .sidebar + .main-content {
+    margin-left: 300px;
+  }
 }

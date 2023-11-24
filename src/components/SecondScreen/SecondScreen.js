@@ -1,31 +1,25 @@
-import React, { useState } from "react";
-import "./SecondScreen.css";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
-import Works from "../Works/Works";
-// Import other components like About, Contacts, etc.
+import About from "../SidebarMenu/About/About";
+import Contacts from "../SidebarMenu/Contacts/Contacts";
+import Works from "../SidebarMenu/Works/Works";
+import Designs from "../SidebarMenu/Designs/Designs";
+import "./SecondScreen.css";
 
 const SecondScreen = () => {
-  const [activePage, setActivePage] = useState("");
-
-  const handleMenuClick = (menuItem) => {
-    setActivePage(menuItem);
-  };
-
-  const renderContent = () => {
-    switch (activePage) {
-      case "works":
-        return <Works />;
-      // Add cases for other menu items like 'about', 'contacts', etc.
-      default:
-        return <h1>Hello</h1>; // Default content
-    }
-  };
-
   return (
-    <section className="screen-container">
-      <Sidebar onMenuClick={handleMenuClick} />
-      <div className="main-content">{renderContent()}</div>
-    </section>
+    <div className="screen-container">
+      <Sidebar />
+      <div className="main-content">
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/designs" element={<Designs />} />
+        </Routes>
+      </div>
+    </div>
   );
 };
 

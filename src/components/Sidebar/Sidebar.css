@@ -1,14 +1,15 @@
 .sidebar {
-  position: relative;
+  position: fixed;
   width: 250px;
-  height: 100vh;
+  height: 100vh; /* Full height */
   top: 0;
   left: 0;
   background: linear-gradient(0deg, #000105 9.43%, #0a2d40 99.97%);
-  transition: 0.3s;
+  transition: width 0.3s;
   padding: 24px;
   border-radius: 0px 40px 40px 0px;
   box-shadow: 3px 0px 16px rgba(0, 0, 0, 0.369);
+  z-index: 5; 
 }
 
 .sidebar.collapsed {
@@ -62,7 +63,7 @@ header {
 }
 
 .menu-links li {
-  font-weight: 600;
+  font-weight: 300;
   display: flex;
   align-items: center;
   padding: 12px 0;
@@ -71,9 +72,13 @@ header {
   text-transform: uppercase;
   transition: all ease-in-out 300ms;
 }
+.menu-links li a {
+  text-decoration: none; 
+  color: inherit; 
+}
 .menu-links li:hover {
   transform: scaleX(1.07);
-  color: aquamarine;
+  color: #6892B0;
 }
 
 .menu-links li .menu-icon {
