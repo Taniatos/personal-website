@@ -3,7 +3,7 @@ import "./Sidebar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
-  faAddressCard,
+  faPaperPlane,
   faBriefcase,
   faPaintbrush,
 } from "@fortawesome/free-solid-svg-icons";
@@ -45,7 +45,7 @@ const Sidebar = ({ onMenuClick }) => {
           {!isCollapsed && "About"}
         </li>
         <li onClick={() => onMenuClick("contacts")}>
-          <FontAwesomeIcon icon={faAddressCard} className="menu-icon" />
+          <FontAwesomeIcon icon={faPaperPlane} className="menu-icon" />
           {!isCollapsed && "Contacts"}
         </li>
         <li onClick={() => onMenuClick("works")}>
