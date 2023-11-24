@@ -23,24 +23,26 @@ header {
 }
 
 .logo-section,
-.logo-section .logo,
 .logo-section .logo-text {
   display: flex;
   align-items: center;
 }
 
-.logo-section .logo {
-  width: 35px;
-  height: 35px;
-  margin-right: 10px;
-  margin-top: 12px;
+.logo-section .logo-text-expanded {
+  font-weight: 300;
+  font-size: 32px;
+  font-family: var(--accent-font);
+  color: var(--main-white);
+}
+.logo-section .logo-text-collapsed {
+  font-weight: 300;
+  font-size: 32px;
+  margin-left: -8px;
+  letter-spacing: 0.3em;
+  font-family: var(--accent-font);
+  color: var(--main-white);
 }
 
-.logo-section .logo-text {
-  font-weight: 600;
-  font-size: 18px;
-  color: white;
-}
 
 .toggle {
   position: absolute;
@@ -74,10 +76,10 @@ header {
   color: aquamarine;
 }
 
-.menu-links li img {
-  width: 24px;
-  height: 24px;
-  margin-right: 16px;
+.menu-links li .menu-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 24px;
 }
 
 .sidebar.collapsed .toggle {

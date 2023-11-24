@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faAddressCard,
+  faBriefcase,
+  faPaintbrush,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = ({ onMenuClick }) => {
   const [isCollapsed, setIsCollapsed] = useState(window.innerWidth < 1160);
@@ -19,13 +26,10 @@ const Sidebar = ({ onMenuClick }) => {
     <nav className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       <header>
         <div className="logo-section">
-          <img
-            className="logo"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/753/original/icon-down.png?1698114371"
-            alt="Logo"
-          />
-          {!isCollapsed && (
-            <span className="logo-text">Tetiana Korchynska</span>
+          {isCollapsed ? (
+            <span className="logo-text-collapsed">TK</span>
+          ) : (
+            <span className="logo-text-expanded">Tetiana Korchynska</span>
           )}
         </div>
         <img
@@ -37,31 +41,19 @@ const Sidebar = ({ onMenuClick }) => {
       </header>
       <ul className="menu-links">
         <li onClick={() => onMenuClick("about")}>
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/753/original/icon-down.png?1698114371"
-            alt="About Icon"
-          />
+          <FontAwesomeIcon icon={faUser} className="menu-icon" />
           {!isCollapsed && "About"}
         </li>
         <li onClick={() => onMenuClick("contacts")}>
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/753/original/icon-down.png?1698114371"
-            alt="Contacts Icon"
-          />
+          <FontAwesomeIcon icon={faAddressCard} className="menu-icon" />
           {!isCollapsed && "Contacts"}
         </li>
         <li onClick={() => onMenuClick("works")}>
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/753/original/icon-down.png?1698114371"
-            alt="Works Icon"
-          />
+          <FontAwesomeIcon icon={faBriefcase} className="menu-icon" />
           {!isCollapsed && "Works"}
         </li>
         <li onClick={() => onMenuClick("designs")}>
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/753/original/icon-down.png?1698114371"
-            alt="Designs Icon"
-          />
+          <FontAwesomeIcon icon={faPaintbrush} className="menu-icon" />
           {!isCollapsed && "Designs"}
         </li>
       </ul>
