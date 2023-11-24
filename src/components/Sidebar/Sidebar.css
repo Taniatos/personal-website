@@ -86,24 +86,35 @@ header {
   transform: rotate(180deg);
 }
 
+
 @media only screen and (max-width: 420px) {
+
   .sidebar {
     padding: 8px;
     height: auto; 
     overflow: visible;
   }
- 
+
   .sidebar.collapsed {
     width: 24px;
   }
+
   .sidebar.collapsed .logo-section {
     display: none;
   }
+
   .menu-links {
-     margin-top: 80px;
+    margin-top: 80px;
   }
-    .logo-section .logo-text {
-    display: none; 
+    .sidebar:not(.collapsed) .menu-links li .menu-icon {
+    margin-left: 8px; 
   }
-  
+ .sidebar:not(.collapsed) .menu-links {
+    margin-top: 36px;
+  }
+  .sidebar:not(.collapsed) .logo-section .logo-text-expanded {
+    font-size: 24px; 
+    margin-top: 24px;
+    margin-left: 4px; 
+  }
 }
