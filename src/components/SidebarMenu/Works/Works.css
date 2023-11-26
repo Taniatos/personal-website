@@ -59,9 +59,29 @@
     width: 500px; 
   }
 }
+@media (max-width: 1160px) {
+  .carousel-controls {
+    position: static; 
+    top: auto;
+    transform: none;
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+  }
 
-@media (max-width: 420px) {
+  .carousel-button {
+margin-left: 20px; 
+margin-right: 20px; }
+}
+@media (max-width: 430px) {
   .carousel-slide {
     margin-top: 100px; 
+  }
+  .carousel-controls {
+    position: fixed; 
+    bottom: 60px; 
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
   }
 }
