@@ -11,13 +11,16 @@ const SecondScreen = () => {
   return (
     <div className="screen-container">
       <Sidebar />
-      <div className="main-content">
+      <div className="sidebar-content">
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/works" element={<Works />} />
           <Route path="/designs" element={<Designs />} />
         </Routes>
+      </div>
+      <div className="main-content">
+        <h1>hello</h1>
       </div>
     </div>
   );

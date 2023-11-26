@@ -26,7 +26,7 @@ const Sidebar = () => {
   return (
     <nav className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       <header>
-        <Link to="/second/about" className="logo-section">
+        <Link to="/second" className="logo-section">
           {isCollapsed ? (
             <span className="logo-text-collapsed">TK</span>
           ) : (
@@ -48,12 +48,6 @@ const Sidebar = () => {
           </Link>
         </li>
         <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
-          <Link to="/second/contacts">
-            <FontAwesomeIcon icon={faPaperPlane} className="menu-icon" />
-            {!isCollapsed && "Contacts"}
-          </Link>
-        </li>
-        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
           <Link to="/second/works">
             <FontAwesomeIcon icon={faBriefcase} className="menu-icon" />
             {!isCollapsed && "Works"}
@@ -63,6 +57,12 @@ const Sidebar = () => {
           <Link to="/second/designs">
             <FontAwesomeIcon icon={faPaintbrush} className="menu-icon" />
             {!isCollapsed && "Designs"}
+          </Link>
+        </li>
+        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+          <Link to="/second/contacts">
+            <FontAwesomeIcon icon={faPaperPlane} className="menu-icon" />
+            {!isCollapsed && "Contacts"}
           </Link>
         </li>
       </ul>

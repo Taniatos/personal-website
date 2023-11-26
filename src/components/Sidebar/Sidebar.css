@@ -37,7 +37,7 @@ header {
 
 .logo-section .logo-text-expanded {
   font-weight: 300;
-  font-size: 32px;
+  font-size: 28px;
   font-family: var(--accent-font);
   color: var(--main-white);
 }

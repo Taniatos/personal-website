@@ -4,7 +4,7 @@
   height: 100vh; 
 }
 
-.main-content {
+.sidebar-content {
   flex-grow: 1;
   padding: 20px;
   overflow-y: auto;
@@ -16,13 +16,13 @@
 }
 
 @media screen and (max-width: 1160px) {
-  .sidebar.collapsed + .main-content {
+  .sidebar.collapsed + .sidebar-content {
     margin-left: 50px; 
   }
 }
 
 @media screen and (min-width: 1161px) {
-  .sidebar + .main-content {
+  .sidebar + .sidebar-content {
     margin-left: 300px;
   }
 }
