@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import About from "../SidebarMenu/About/About";
 import Contacts from "../SidebarMenu/Contacts/Contacts";
@@ -8,6 +8,9 @@ import Designs from "../SidebarMenu/Designs/Designs";
 import "./SecondScreen.css";
 
 const SecondScreen = () => {
+  const location = useLocation();
+  const isBasePath = location.pathname === "/second";
+
   return (
     <div className="screen-container">
       <Sidebar />
@@ -19,9 +22,11 @@ const SecondScreen = () => {
           <Route path="/designs" element={<Designs />} />
         </Routes>
       </div>
-      <div className="main-content">
-        <h1>hello</h1>
-      </div>
+      {isBasePath && (
+        <div className="main-content">
+          <h1>hello</h1>
+        </div>
+      )}
     </div>
   );
 };
