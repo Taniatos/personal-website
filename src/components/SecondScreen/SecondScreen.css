@@ -17,12 +17,12 @@
 
 @media screen and (max-width: 1160px) {
   .sidebar.collapsed + .sidebar-content {
-    margin-left: 50px; 
+    margin-left: 0px; 
   }
 }
 
 @media screen and (min-width: 1161px) {
   .sidebar + .sidebar-content {
-    margin-left: 300px;
+    margin-left: 0px;
   }
 }
