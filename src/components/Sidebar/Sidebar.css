@@ -78,6 +78,11 @@ header {
   text-transform: uppercase;
   transition: all ease-in-out 300ms;
 }
+.menu-links li.active {
+  transform: scaleX(1.07);
+  color: #6892B0;
+  font-weight: 500;
+}
 .menu-links li a {
   text-decoration: none; 
   color: inherit; 
@@ -85,6 +90,7 @@ header {
 .menu-links li:hover {
   transform: scaleX(1.07);
   color: #6892B0;
+  font-weight: 500;
 }
 
 .menu-links li .menu-icon {

@@ -11,6 +11,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(window.innerWidth < 1160);
+  const [activeMenuItem, setActiveMenuItem] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,6 +21,13 @@ const Sidebar = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const handleMenuItemClick = (menuItem) => {
+    setActiveMenuItem(menuItem);
+    setIsCollapsed(window.innerWidth < 1160);
+  };
+
+  const isActive = (menuItem) => (activeMenuItem === menuItem ? "active" : "");
 
   return (
     <nav className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
@@ -39,25 +47,37 @@ const Sidebar = () => {
         />
       </header>
       <ul className="menu-links">
-        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+        <li
+          className={isActive("about")}
+          onClick={() => handleMenuItemClick("about")}
+        >
           <Link to="/second/about">
             <FontAwesomeIcon icon={faUser} className="menu-icon" />
             {!isCollapsed && "About"}
           </Link>
         </li>
-        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+        <li
+          className={isActive("works")}
+          onClick={() => handleMenuItemClick("works")}
+        >
           <Link to="/second/works">
             <FontAwesomeIcon icon={faBriefcase} className="menu-icon" />
             {!isCollapsed && "Works"}
           </Link>
         </li>
-        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+        <li
+          className={isActive("designs")}
+          onClick={() => handleMenuItemClick("designs")}
+        >
           <Link to="/second/designs">
             <FontAwesomeIcon icon={faPaintbrush} className="menu-icon" />
             {!isCollapsed && "Designs"}
           </Link>
         </li>
-        <li onClick={() => setIsCollapsed(window.innerWidth < 1160)}>
+        <li
+          className={isActive("contacts")}
+          onClick={() => handleMenuItemClick("contacts")}
+        >
           <Link to="/second/contacts">
             <FontAwesomeIcon icon={faPaperPlane} className="menu-icon" />
             {!isCollapsed && "Contacts"}
