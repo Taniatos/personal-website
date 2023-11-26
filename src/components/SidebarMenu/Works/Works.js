@@ -11,22 +11,57 @@ function Works() {
   const slides = [
     {
       content: (
-        <div>
-          {" "}
+        <div className="slide-one">
           <img
-            className="photo1"
+            className="photo-one"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/155/original/visioquest.png?1694132074"
             alt="First slide"
           />
-          Slide 1 Content Here{" "}
+          <p>VisioQuest App1</p>
+          <p>
+            The application is based on Clarifai API to detect faces on the
+            images.
+          </p>
+          <button>Web</button>
+          <button>Code</button>
         </div>
       ),
     },
     {
-      content: <div>Slide 2 Content Here</div>,
+      content: (
+        <div className="slide-two">
+          <img
+            className="photo-two"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/155/original/visioquest.png?1694132074"
+            alt="Second slide"
+          />
+          <p>VisioQuest App2</p>
+          <p>
+            The application is based on Clarifai API to detect faces on the
+            images.
+          </p>
+          <button>Web</button>
+          <button>Code</button>
+        </div>
+      ),
     },
     {
-      content: <div>Slide 3 Content Here</div>,
+      content: (
+        <div className="slide-three">
+          <img
+            className="photo-three"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/155/original/visioquest.png?1694132074"
+            alt="Third slide"
+          />
+          <p>VisioQuest App3</p>
+          <p>
+            The application is based on Clarifai API to detect faces on the
+            images.
+          </p>
+          <button>Web</button>
+          <button>Code</button>
+        </div>
+      ),
     },
   ];
 
