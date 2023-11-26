@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .sidebar-content {
     margin-left: 0; 
   }
