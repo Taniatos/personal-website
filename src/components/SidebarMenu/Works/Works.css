@@ -1,6 +1,6 @@
 .works-page {
   width: 100%;
-  max-width: 600px; 
+  max-width: 700px;
   margin: auto;
   position: relative;
 }
@@ -9,6 +9,7 @@
   display: none;
   width: 100%;
   transition: all 0.5s ease;
+  margin-top: 60px; 
 }
 
 .carousel-slide.active {
@@ -25,7 +26,42 @@
 }
 
 .carousel-button {
-  background: none;
+  background: none; 
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-button svg {
+  width: 40px; 
+  height: 40px; 
+  color: #072534;
+}
+
+.slide-content {
+  text-align: center; 
+}
+
+.works-images {
+  width: 80%; 
+  height: auto; 
+  margin: 0 auto; 
+}
+
+.works-slide-header, .works-slide-description, .works-slide-button-one, .works-slide-button-two {
+  margin: 10px 0; 
+}
+
+@media (min-width: 1160px) {
+  .works-images {
+    width: 500px; 
+  }
+}
+
+@media (max-width: 420px) {
+  .carousel-slide {
+    margin-top: 100px; 
+  }
 }

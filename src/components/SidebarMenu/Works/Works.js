@@ -8,58 +8,64 @@ import {
 
 function Works() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  // Minimum swipe distance
+  const minSwipeDistance = 50;
+
   const slides = [
     {
       content: (
-        <div className="slide-one">
+        <div className="slide-content slide-one">
           <img
-            className="photo-one"
+            className="works-images image-one"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/155/original/visioquest.png?1694132074"
             alt="First slide"
           />
-          <p>VisioQuest App1</p>
-          <p>
+          <p className="works-slide-header">VisioQuest App1</p>
+          <p className="works-slide-description">
             The application is based on Clarifai API to detect faces on the
             images.
           </p>
-          <button>Web</button>
-          <button>Code</button>
+          <button className="works-slide-button-one">Web</button>
+          <button className="works-slide-button-two">Code</button>
         </div>
       ),
     },
     {
       content: (
-        <div className="slide-two">
+        <div className="slide-content slide-two">
           <img
-            className="photo-two"
+            className="works-images image-two"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/155/original/visioquest.png?1694132074"
             alt="Second slide"
           />
-          <p>VisioQuest App2</p>
-          <p>
+          <p className="works-slide-header">VisioQuest App2</p>
+          <p className="works-slide-description">
             The application is based on Clarifai API to detect faces on the
             images.
           </p>
-          <button>Web</button>
-          <button>Code</button>
+          <button className="works-slide-button-one">Web</button>
+          <button className="works-slide-button-two">Code</button>
         </div>
       ),
     },
     {
       content: (
-        <div className="slide-three">
+        <div className="slide-content slide-three">
           <img
-            className="photo-three"
+            className="works-images image-three"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/155/original/visioquest.png?1694132074"
             alt="Third slide"
           />
-          <p>VisioQuest App3</p>
-          <p>
+          <p className="works-slide-header">VisioQuest App3</p>
+          <p className="works-slide-description">
             The application is based on Clarifai API to detect faces on the
             images.
           </p>
-          <button>Web</button>
-          <button>Code</button>
+          <button className="works-slide-button-one">Web</button>
+          <button className="works-slide-button-two">Code</button>
         </div>
       ),
     },
@@ -77,8 +83,38 @@ function Works() {
     setActiveIndex(newIndex);
   };
 
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isSwipeLeft = distance > minSwipeDistance;
+    const isSwipeRight = distance < -minSwipeDistance;
+
+    if (isSwipeLeft) {
+      goToNext();
+    } else if (isSwipeRight) {
+      goToPrevious();
+    }
+
+    // Reset values
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
   return (
-    <div className="works-page">
+    <div
+      className="works-page"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       {slides.map((slide, index) => (
         <div
           key={index}
