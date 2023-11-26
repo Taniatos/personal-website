@@ -12,8 +12,6 @@ import "./Sidebar.css";
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(window.innerWidth < 1160);
 
-  const toggleSidebar = () => setIsCollapsed(!isCollapsed);
-
   useEffect(() => {
     const handleResize = () => {
       setIsCollapsed(window.innerWidth < 1160);
@@ -37,7 +35,7 @@ const Sidebar = () => {
           className="toggle"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/964/original/icon-close.png?1698267131"
           alt="Toggle Icon"
-          onClick={toggleSidebar}
+          onClick={() => setIsCollapsed(!isCollapsed)}
         />
       </header>
       <ul className="menu-links">
