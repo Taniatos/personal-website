@@ -24,7 +24,7 @@ function Works() {
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/084/original/visioquest.png?1701044250"
             alt="First slide"
           />
-          <p className="works-slide-header">VisioQuest App1</p>
+          <p className="works-slide-header">VisioQuest App</p>
           <p className="works-slide-description">
             The application is based on Clarifai API to detect faces on the
             images.
@@ -43,10 +43,10 @@ function Works() {
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/081/original/wordle.png?1701043495"
             alt="Second slide"
           />
-          <p className="works-slide-header">VisioQuest App2</p>
+          <p className="works-slide-header">Wordle</p>
           <p className="works-slide-description">
-            The application is based on Clarifai API to detect faces on the
-            images.
+            Wordle Clone App is built in React using hooks. It offers players a
+            challenge to deduce a five-letter word in six attempts.
           </p>
           <button className="works-slide-button-one">Web</button>
           <button className="works-slide-button-two">Code</button>
@@ -62,10 +62,10 @@ function Works() {
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/080/original/weather.png?1701043478"
             alt="Third slide"
           />
-          <p className="works-slide-header">VisioQuest App3</p>
+          <p className="works-slide-header">Weather App</p>
           <p className="works-slide-description">
-            The application is based on Clarifai API to detect faces on the
-            images.
+            Built in React on the basis of the SheCodes Weather API for the
+            real-life forecast.
           </p>
           <button className="works-slide-button-one">Web</button>
           <button className="works-slide-button-two">Code</button>
@@ -81,10 +81,10 @@ function Works() {
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/074/original/barber.png?1701041052"
             alt="Fourth slide"
           />
-          <p className="works-slide-header">VisioQuest App4</p>
+          <p className="works-slide-header">Barbershop Landing Page</p>
           <p className="works-slide-description">
-            The application is based on Clarifai API to detect faces on the
-            images.
+            Responsive dark-themed landing page built in React to demonstrate my
+            designing and coding skills in one project.
           </p>
           <button className="works-slide-button-one">Web</button>
           <button className="works-slide-button-two">Code</button>
@@ -100,9 +100,10 @@ function Works() {
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/078/original/dictionary.png?1701043447"
             alt="Fifth slide"
           />
-          <p className="works-slide-header">VisioQuest App5</p>
+          <p className="works-slide-header">Dictionary App</p>
           <p className="works-slide-description">
-            The application is based on Clarifai API to detect faces on the
+            An application built in React serves as an online dictionary that
+            showcases all the meanings of the searched word and its related
             images.
           </p>
           <button className="works-slide-button-one">Web</button>
@@ -116,13 +117,13 @@ function Works() {
         <div className="slide-content slide-six">
           <img
             className="works-images image-six"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/078/original/dictionary.png?1701043447"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/079/original/travel.png?1701043459"
             alt="Sixth slide"
           />
-          <p className="works-slide-header">VisioQuest App6</p>
+          <p className="works-slide-header">City Landing Page</p>
           <p className="works-slide-description">
-            The application is based on Clarifai API to detect faces on the
-            images.
+            Built using HTML, CSS, and Bootstrap, the project aims to
+            demonstrate advanced responsive techniques.
           </p>
           <button className="works-slide-button-one">Web</button>
           <button className="works-slide-button-two">Code</button>
@@ -138,10 +139,10 @@ function Works() {
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/077/original/clock.png?1701043440"
             alt="Seventh slide"
           />
-          <p className="works-slide-header">VisioQuest App7</p>
+          <p className="works-slide-header">World Clock App</p>
           <p className="works-slide-description">
-            The application is based on Clarifai API to detect faces on the
-            images.
+            The project was built using HTML, CSS, JavaScript and real-life data
+            from Moment.js.
           </p>
           <button className="works-slide-button-one">Web</button>
           <button className="works-slide-button-two">Code</button>
@@ -157,10 +158,13 @@ function Works() {
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/085/original/charitable.png?1701044795"
             alt="Eighth slide"
           />
-          <p className="works-slide-header">VisioQuest App8</p>
+          <p className="works-slide-header">Charitable Foundation Website</p>
           <p className="works-slide-description">
-            The application is based on Clarifai API to detect faces on the
-            images.
+            Real-life project currently in progress. It will be serving as a
+            virtual business card of Andrii Kviatkovskii Charitable Foundation
+            to help raise money for the military and humanitarian purposes of
+            the Armed Forces of Ukraine and families affected by the ongoing
+            war.
           </p>
           <button className="works-slide-button-one">Web</button>
           <button className="works-slide-button-two">Code</button>
