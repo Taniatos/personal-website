@@ -14,8 +14,9 @@ function Works() {
   // Minimum swipe distance
   const minSwipeDistance = 50;
 
+  
   const slides = [
-    // One
+    // Slide 1
     {
       content: (
         <div className="slide-content slide-one">
@@ -29,12 +30,24 @@ function Works() {
             The application is based on Clarifai API to detect faces on the
             images.
           </p>
-          <button className="works-slide-button-one">Web</button>
-          <button className="works-slide-button-two">Code</button>
+          <a
+            href="https://face-recognition-visioquest.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-one">Web</button>
+          </a>
+          <a
+            href="https://github.com/Taniatos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-two">Code</button>
+          </a>
         </div>
       ),
     },
-    //Two
+    // Slide 2
     {
       content: (
         <div className="slide-content slide-two">
@@ -48,12 +61,24 @@ function Works() {
             Wordle Clone App is built in React using hooks. It offers players a
             challenge to deduce a five-letter word in six attempts.
           </p>
-          <button className="works-slide-button-one">Web</button>
-          <button className="works-slide-button-two">Code</button>
+          <a
+            href="https://reactjs-wordle-clone.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-one">Web</button>
+          </a>
+          <a
+            href="https://github.com/Taniatos/wordle-clone-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-two">Code</button>
+          </a>
         </div>
       ),
     },
-    //Three
+    // Slide 3
     {
       content: (
         <div className="slide-content slide-three">
@@ -67,12 +92,24 @@ function Works() {
             Built in React on the basis of the SheCodes Weather API for the
             real-life forecast.
           </p>
-          <button className="works-slide-button-one">Web</button>
-          <button className="works-slide-button-two">Code</button>
+          <a
+            href="https://react-weather-application-tania.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-one">Web</button>
+          </a>
+          <a
+            href="https://github.com/Taniatos/weather-app-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-two">Code</button>
+          </a>
         </div>
       ),
     },
-    //Four
+    // Slide 4
     {
       content: (
         <div className="slide-content slide-four">
@@ -86,12 +123,25 @@ function Works() {
             Responsive dark-themed landing page built in React to demonstrate my
             designing and coding skills in one project.
           </p>
-          <button className="works-slide-button-one">Web</button>
-          <button className="works-slide-button-two">Code</button>
+
+          <a
+            href="LINK-TO-WEB-VERSION"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-one">Web</button>
+          </a>
+          <a
+            href="LINK-TO-CODE-REPOSITORY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-two">Code</button>
+          </a>
         </div>
       ),
     },
-    //Five
+    // Slide 5
     {
       content: (
         <div className="slide-content slide-five">
@@ -106,12 +156,25 @@ function Works() {
             showcases all the meanings of the searched word and its related
             images.
           </p>
-          <button className="works-slide-button-one">Web</button>
-          <button className="works-slide-button-two">Code</button>
+
+          <a
+            href="LINK-TO-WEB-VERSION"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-one">Web</button>
+          </a>
+          <a
+            href="LINK-TO-CODE-REPOSITORY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-two">Code</button>
+          </a>
         </div>
       ),
     },
-    //Six
+    // Slide 6
     {
       content: (
         <div className="slide-content slide-six">
@@ -125,12 +188,25 @@ function Works() {
             Built using HTML, CSS, and Bootstrap, the project aims to
             demonstrate advanced responsive techniques.
           </p>
-          <button className="works-slide-button-one">Web</button>
-          <button className="works-slide-button-two">Code</button>
+
+          <a
+            href="LINK-TO-WEB-VERSION"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-one">Web</button>
+          </a>
+          <a
+            href="LINK-TO-CODE-REPOSITORY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-two">Code</button>
+          </a>
         </div>
       ),
     },
-    //Seven
+    // Slide 7
     {
       content: (
         <div className="slide-content slide-seven">
@@ -144,12 +220,25 @@ function Works() {
             The project was built using HTML, CSS, JavaScript and real-life data
             from Moment.js.
           </p>
-          <button className="works-slide-button-one">Web</button>
-          <button className="works-slide-button-two">Code</button>
+
+          <a
+            href="LINK-TO-WEB-VERSION"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-one">Web</button>
+          </a>
+          <a
+            href="LINK-TO-CODE-REPOSITORY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-two">Code</button>
+          </a>
         </div>
       ),
     },
-    //Eight
+    // Slide 8
     {
       content: (
         <div className="slide-content slide-eight">
@@ -166,13 +255,27 @@ function Works() {
             the Armed Forces of Ukraine and families affected by the ongoing
             war.
           </p>
-          <button className="works-slide-button-one">Web</button>
-          <button className="works-slide-button-two">Code</button>
+
+          <a
+            href="LINK-TO-WEB-VERSION"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-one">Web</button>
+          </a>
+          <a
+            href="LINK-TO-CODE-REPOSITORY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-two">Code</button>
+          </a>
         </div>
       ),
     },
   ];
 
+ 
   const goToPrevious = () => {
     const isFirstSlide = activeIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : activeIndex - 1;
