@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
   faPaperPlane,
+  faLaptopCode,
   faBriefcase,
-  faPaintbrush,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Sidebar.css";
 
@@ -61,7 +61,7 @@ const Sidebar = () => {
           onClick={() => handleMenuItemClick("experience")}
         >
           <Link to="/second/experience">
-            <FontAwesomeIcon icon={faPaintbrush} className="menu-icon" />
+            <FontAwesomeIcon icon={faBriefcase} className="menu-icon" />
             {!isCollapsed && "Experience"}
           </Link>
         </li>
@@ -70,7 +70,7 @@ const Sidebar = () => {
           onClick={() => handleMenuItemClick("works")}
         >
           <Link to="/second/works">
-            <FontAwesomeIcon icon={faBriefcase} className="menu-icon" />
+            <FontAwesomeIcon icon={faLaptopCode} className="menu-icon" />
             {!isCollapsed && "Works"}
           </Link>
         </li>
