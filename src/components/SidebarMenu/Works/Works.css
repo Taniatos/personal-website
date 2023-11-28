@@ -100,6 +100,21 @@
 .works-slide-button-two:hover {
   letter-spacing: 0.7rem;
 }
+.works-slide-button-three {
+  background-color: #174964;
+  color: var(--main-white);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  border: 1px solid #174964;
+  padding: 12px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.works-slide-button-three:hover {
+  letter-spacing: 0.5rem;
+}
 @media (min-width: 1160px) {
   .works-images {
     width: 500px;
@@ -114,7 +129,7 @@
     display: flex;
     justify-content: center;
   }
-   .works-slide-header {
+  .works-slide-header {
     margin-top: 40px;
     font-size: 3em;
     line-height: 100%;

@@ -273,6 +273,31 @@ function Works() {
         </div>
       ),
     },
+    // Slide 9
+    {
+      content: (
+        <div className="slide-content slide-nine">
+          <img
+            className="works-images image-nine"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/179/original/9_designs.png?1701131005"
+            alt="Ninth slide"
+          />
+          <p className="works-slide-header">Designs</p>
+          <p className="works-slide-description">
+            Apart from coding, I also enjoy designing. Visit my Behance profile
+            to check Web and Mobile UI/UX cases.
+          </p>
+
+          <a
+            href="https://www.behance.net/0031c316"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="works-slide-button-three">Benahce</button>
+          </a>
+        </div>
+      ),
+    },
   ];
 
  
