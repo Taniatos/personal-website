@@ -46,12 +46,6 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faCircleChevronRight} className="toggle" />
         </div>
-        {/* <img
-          className="toggle"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/964/original/icon-close.png?1698267131"
-          alt="Toggle Icon"
-          onClick={() => setIsCollapsed(!isCollapsed)}
-        /> */}
       </header>
       <ul className="menu-links">
         <li
