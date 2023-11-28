@@ -78,6 +78,11 @@ $accent-color: #072534;
     font-size: 0.8em;
     content: attr(data-back);
     transform: translateY(-50%) rotateX(90deg);
+
+     @media (max-width: 320px) {
+      font-size: 0.6em;
+       padding: 0px;
+    }
   }
 
   &:before {
@@ -96,6 +101,15 @@ $accent-color: #072534;
     border-radius: 4px;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
+
+    @media (max-width: 430px) {
+      font-size: .9em;
+      padding: 0 28px;
+    }
+    @media (max-width: 320px) {
+      font-size: 0.6em;
+      padding: 0 24px;
+    }
   }
 }
 
