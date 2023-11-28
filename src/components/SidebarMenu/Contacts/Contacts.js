@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contacts.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,6 +8,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Contacts() {
+
+  const [copyText, setCopyText] = useState("tanakorchyska@gmail.com");
+
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText("tanakorchyska@gmail.com");
+      setCopyText("Copied!");
+      setTimeout(() => setCopyText("tanakorchyska@gmail.com"), 3000); 
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };
+
   return (
     <div className="contacts-page">
       <div className="contacts-box">
@@ -16,15 +30,14 @@ function Contacts() {
           I'm looking forward to getting in touch!
         </p>
 
-        <a
-          href="#"
-          class="btn-flip"
-          data-back="tanakorchyska@gmail.com"
+        <button
+          className="btn-flip"
+          onClick={handleCopy}
+          data-back={copyText}
           data-front="My email address"
-        ></a>
+        ></button>
 
         <div className="contacts-icons">
-          {" "}
           <a
             href="https://www.linkedin.com/in/tetiana-korchynska/"
             target="_blank"
