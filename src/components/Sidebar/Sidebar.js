@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faCircleChevronRight,
   faUser,
   faPaperPlane,
   faLaptopCode,
@@ -39,12 +40,18 @@ const Sidebar = () => {
             <span className="logo-text-expanded">Tetiana Korchynska</span>
           )}
         </Link>
-        <img
+        <div
+          className="sidebar-toggle"
+          onClick={() => setIsCollapsed(!isCollapsed)}
+        >
+          <FontAwesomeIcon icon={faCircleChevronRight} className="toggle" />
+        </div>
+        {/* <img
           className="toggle"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/964/original/icon-close.png?1698267131"
           alt="Toggle Icon"
           onClick={() => setIsCollapsed(!isCollapsed)}
-        />
+        /> */}
       </header>
       <ul className="menu-links">
         <li
