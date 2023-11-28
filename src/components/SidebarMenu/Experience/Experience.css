@@ -1,0 +1,59 @@
+.experience-page {
+  max-width: 700px;
+  margin: 40px auto;
+}
+.experience-page-header {
+  font-family: var(--accent-font);
+  font-size: 5em;
+  text-align: center;
+  line-height: 90%;
+  margin-bottom: 18px;
+}
+.accordion-item {
+  color: var(--main-black);
+  background-color: var(--main-white);
+}
+.accordion-button {
+  color: var(--main-white);
+  background: linear-gradient(0deg, #000105 9.43%, #0a2d40 99.97%);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--main-white);
+}
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.experience-company-name {
+  color: var(--main-black);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: xx-large;
+  cursor: pointer;
+}
+.experience-years {
+  color: #4b565c;
+  letter-spacing: 0.1em;
+}
+.experience-ul {
+  margin-top: 24px;
+}
+@media (max-width: 800px) {
+  .experience-page-header {
+    font-size: 4em;
+  }
+}
+@media (max-width: 640px) {
+  .experience-page-header {
+    font-size: 3.4em;
+  }
+}
+@media (max-width: 520px) {
+  .experience-page-header {
+    font-size: 3em;
+  }
+}
