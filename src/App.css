@@ -16,8 +16,8 @@ body {
     -45deg,
     #fafdff 0%,
     #e5f3f8 55%,
-    #e5f3f8 70%,
-    #b1e7f8 90%
+    #f1f8fb 70%,
+    #f1fafc 90%
   );
   -webkit-animation: AnimateBG 30s ease infinite;
   animation: AnimateBG 30s ease infinite;

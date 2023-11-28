@@ -1,7 +1,6 @@
 import React from "react";
-import "./Contacts.css"; // Ensure this path is correct
+import "./Contacts.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import {
   faLinkedin,
   faSquareGithub,
@@ -14,18 +13,16 @@ function Contacts() {
       <div className="contacts-box">
         <h1 className="contacts-header">Contact me</h1>
         <p className="contacts-subheader">
-          I'm looking forward to get in thouch!
+          I'm looking forward to getting in touch!
         </p>
-        <div className="contacts-email">
-          <a
-            href="mailto:[tanakorchynska@gmal.com]"
-            className="contacts-email-address"
-          >
-            tanakorchynska@gmail.com
-          </a>
-       
-          <FontAwesomeIcon icon={faCopy} />
-        </div>
+
+        <a
+          href="#"
+          class="btn-flip"
+          data-back="tanakorchyska@gmail.com"
+          data-front="My email address"
+        ></a>
+
         <div className="contacts-icons">
           {" "}
           <a
