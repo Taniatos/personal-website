@@ -4,7 +4,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import About from "../SidebarMenu/About/About";
 import Contacts from "../SidebarMenu/Contacts/Contacts";
 import Works from "../SidebarMenu/Works/Works";
-import Designs from "../SidebarMenu/Designs/Designs";
+import Experience from "../SidebarMenu/Experience/Experience";
 import "./SecondScreen.css";
 
 const SecondScreen = () => {
@@ -19,7 +19,7 @@ const SecondScreen = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/works" element={<Works />} />
-          <Route path="/designs" element={<Designs />} />
+          <Route path="/experience" element={<Experience />} />
         </Routes>
       </div>
       {isBasePath && (
