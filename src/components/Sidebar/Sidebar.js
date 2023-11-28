@@ -57,6 +57,15 @@ const Sidebar = () => {
           </Link>
         </li>
         <li
+          className={isActive("experience")}
+          onClick={() => handleMenuItemClick("experience")}
+        >
+          <Link to="/second/experience">
+            <FontAwesomeIcon icon={faPaintbrush} className="menu-icon" />
+            {!isCollapsed && "Experience"}
+          </Link>
+        </li>
+        <li
           className={isActive("works")}
           onClick={() => handleMenuItemClick("works")}
         >
@@ -65,15 +74,7 @@ const Sidebar = () => {
             {!isCollapsed && "Works"}
           </Link>
         </li>
-        <li
-          className={isActive("designs")}
-          onClick={() => handleMenuItemClick("designs")}
-        >
-          <Link to="/second/designs">
-            <FontAwesomeIcon icon={faPaintbrush} className="menu-icon" />
-            {!isCollapsed && "Designs"}
-          </Link>
-        </li>
+
         <li
           className={isActive("contacts")}
           onClick={() => handleMenuItemClick("contacts")}
