@@ -1,0 +1,94 @@
+.contacts-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.contacts-box {
+  width: auto;
+  margin: auto;
+  text-align: center;
+  padding: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(144, 200, 249, 0.3) 0.1%,
+    rgba(231, 245, 249, 0.3) 90.1%
+  );
+}
+.contacts-header {
+  font-family: var(--accent-font);
+  font-size: 5em;
+}
+
+.contacts-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  background: linear-gradient(0deg, #000105 9.43%, #0a2d40 99.97%);
+  color: var(--main-white);
+  padding: 12px;
+  max-width: 300px;
+  border-radius: 8px;
+}
+.contacts-email-address {
+  font-size: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--main-white);
+  text-decoration: none;
+}
+.contacts-email svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+.contacts-icons svg {
+  font-size: 32px;
+  color: #0a2d40;
+  margin: 6px;
+}
+
+@media (max-width: 600px) {
+  .contacts-box {
+    width: 95%;
+  }
+  .contacts-header {
+    font-size: 4em;
+  }
+  .contacts-email-address {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 500px) {
+  .contacts-email-address {
+    font-size: 0.7em;
+  }
+  .contacts-email svg {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .contacts-box {
+    padding: 24px;
+  }
+  .contacts-header {
+    font-size: 3em;
+  }
+  .contacts-email {
+    background: transparent;
+    margin-bottom: 20px;
+  }
+  .contacts-email-address {
+    font-size: 0.8em;
+    color: var(--main-black);
+  }
+  .contacts-email svg {
+    font-size: 14px;
+    color: #505153;
+  }
+}
