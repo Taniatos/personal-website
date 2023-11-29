@@ -8,9 +8,6 @@ import Experience from "../SidebarMenu/Experience/Experience";
 import "./SecondScreen.css";
 
 const SecondScreen = () => {
-  const location = useLocation();
-  const isBasePath = location.pathname === "/second";
-
   return (
     <div className="screen-container">
       <Sidebar />
