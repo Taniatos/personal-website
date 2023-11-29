@@ -14,7 +14,7 @@ function About() {
               I am a Front-End Developer with more than one year of experience,
               complemented by a six-year background in the IT industry,
               including roles from Customer Support Representative to HR &
-              Reputation Manager. This diverse experience has given me a broad
+              Reputation Manager. This diverse background has given me a broad
               perspective on different aspects of technology and user
               engagement.
             </p>
@@ -27,7 +27,7 @@ function About() {
               essential for creating effective and responsive websites. This
               combination of skills enables me to develop websites that are not
               only visually appealing but also provide an excellent user
-              experience for our clients.
+              experience for the customers.
             </p>
           </div>
         </div>
