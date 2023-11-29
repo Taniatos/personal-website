@@ -248,7 +248,7 @@ function Works() {
           />
           <p className="works-slide-header">Charitable Foundation Website</p>
           <p className="works-slide-description">
-            Real-life project currently <span className="works-slide-span">in progress</span>. It will be
+            The project is currently <span className="works-slide-span">in progress</span>. It will be
             serving as a virtual representation of Andrii Kviatkovskii Charitable
             Foundation to help raise money for the military and humanitarian
             purposes of the Armed Forces of Ukraine and families affected by the
