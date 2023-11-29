@@ -115,6 +115,9 @@
 .works-slide-button-three:hover {
   letter-spacing: 0.5rem;
 }
+.works-slide-span {
+  font-weight: 600;
+}
 @media (min-width: 1160px) {
   .works-images {
     width: 500px;
