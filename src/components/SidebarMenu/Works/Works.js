@@ -16,7 +16,7 @@ function Works() {
 
   
   const slides = [
-    // Slide 1
+    // Slide 1 - Face Recognition
     {
       content: (
         <div className="slide-content slide-one">
@@ -28,7 +28,7 @@ function Works() {
           <p className="works-slide-header">VisioQuest App</p>
           <p className="works-slide-description">
             The application is based on Clarifai API to detect faces on the
-            images.
+            images. Give it a try by pasting the image URL to the search field!
           </p>
           <a
             href="https://face-recognition-visioquest.netlify.app/"
@@ -38,7 +38,7 @@ function Works() {
             <button className="works-slide-button-one">Web</button>
           </a>
           <a
-            href="https://github.com/Taniatos"
+            href="https://github.com/Taniatos/face-recognition-app-visioquest"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -47,7 +47,7 @@ function Works() {
         </div>
       ),
     },
-    // Slide 2
+    // Slide 2 - Wordle
     {
       content: (
         <div className="slide-content slide-two">
@@ -58,8 +58,8 @@ function Works() {
           />
           <p className="works-slide-header">Wordle</p>
           <p className="works-slide-description">
-            Wordle Clone App is built in React using hooks. It offers players a
-            challenge to deduce a five-letter word in six attempts.
+            My version of the renowned Wordle Game is built in React. It offers
+            players a challenge to deduce a five-letter word in six attempts.
           </p>
           <a
             href="https://reactjs-wordle-clone.netlify.app/"
@@ -78,7 +78,7 @@ function Works() {
         </div>
       ),
     },
-    // Slide 3
+    // Slide 3 - Weather App
     {
       content: (
         <div className="slide-content slide-three">
@@ -89,8 +89,8 @@ function Works() {
           />
           <p className="works-slide-header">Weather App</p>
           <p className="works-slide-description">
-            Built in React on the basis of the SheCodes Weather API for the
-            real-life forecast.
+            This application is built in React on the basis of the SheCodes
+            Weather API for the real-life forecast.
           </p>
           <a
             href="https://react-weather-application-tania.netlify.app/"
@@ -109,7 +109,7 @@ function Works() {
         </div>
       ),
     },
-    // Slide 4
+    // Slide 4 - Barbershop
     {
       content: (
         <div className="slide-content slide-four">
@@ -120,19 +120,19 @@ function Works() {
           />
           <p className="works-slide-header">Barbershop Landing Page</p>
           <p className="works-slide-description">
-            Responsive dark-themed landing page built in React to demonstrate my
-            designing and coding skills in one project.
+            Responsive dark-themed landing page built in React aims to
+            demonstrate my designing and coding skills in one project.
           </p>
 
           <a
-            href="LINK-TO-WEB-VERSION"
+            href="https://apollocuts-barbershop-landing.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="works-slide-button-one">Web</button>
           </a>
           <a
-            href="LINK-TO-CODE-REPOSITORY"
+            href="https://github.com/Taniatos/barbershop-landing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -141,7 +141,7 @@ function Works() {
         </div>
       ),
     },
-    // Slide 5
+    // Slide 5 - Dictionary
     {
       content: (
         <div className="slide-content slide-five">
@@ -152,20 +152,19 @@ function Works() {
           />
           <p className="works-slide-header">Dictionary App</p>
           <p className="works-slide-description">
-            An application built in React serves as an online dictionary that
-            showcases all the meanings of the searched word and its related
-            images.
+            One more React App which serves as an online dictionary to showcase
+            all the meanings of the searched word and its related images.
           </p>
 
           <a
-            href="LINK-TO-WEB-VERSION"
+            href="https://lexicopia-dictionary.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="works-slide-button-one">Web</button>
           </a>
           <a
-            href="LINK-TO-CODE-REPOSITORY"
+            href="https://github.com/Taniatos/dictionary"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -174,7 +173,7 @@ function Works() {
         </div>
       ),
     },
-    // Slide 6
+    // Slide 6 - Travel
     {
       content: (
         <div className="slide-content slide-six">
@@ -186,18 +185,18 @@ function Works() {
           <p className="works-slide-header">City Landing Page</p>
           <p className="works-slide-description">
             Built using HTML, CSS, and Bootstrap, the project aims to
-            demonstrate advanced responsive techniques.
+            demonstrate Responsive Web Design techniques.
           </p>
 
           <a
-            href="LINK-TO-WEB-VERSION"
+            href="https://travel-project-by-tetiana.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="works-slide-button-one">Web</button>
           </a>
           <a
-            href="LINK-TO-CODE-REPOSITORY"
+            href="https://github.com/Taniatos/travel-project"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -206,7 +205,7 @@ function Works() {
         </div>
       ),
     },
-    // Slide 7
+    // Slide 7 - World Clock
     {
       content: (
         <div className="slide-content slide-seven">
@@ -222,14 +221,14 @@ function Works() {
           </p>
 
           <a
-            href="LINK-TO-WEB-VERSION"
+            href="https://world-clock-projectbytania.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="works-slide-button-one">Web</button>
           </a>
           <a
-            href="LINK-TO-CODE-REPOSITORY"
+            href="https://github.com/Taniatos/world-clock-app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -238,7 +237,7 @@ function Works() {
         </div>
       ),
     },
-    // Slide 8
+    // Slide 8 - Charitable
     {
       content: (
         <div className="slide-content slide-eight">
@@ -249,31 +248,29 @@ function Works() {
           />
           <p className="works-slide-header">Charitable Foundation Website</p>
           <p className="works-slide-description">
-            Real-life project currently in progress. It will be serving as a
-            virtual business card of Andrii Kviatkovskii Charitable Foundation
-            to help raise money for the military and humanitarian purposes of
-            the Armed Forces of Ukraine and families affected by the ongoing
-            war.
+            Real-life project currently <span className="works-slide-span">in progress</span>. It will be
+            serving as a virtual representation of Andrii Kviatkovskii Charitable
+            Foundation to help raise money for the military and humanitarian
+            purposes of the Armed Forces of Ukraine and families affected by the
+            ongoing war.
           </p>
 
-          <a
+          {/* <a
             href="LINK-TO-WEB-VERSION"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <button className="works-slide-button-one">Web</button>
-          </a>
-          <a
+          ></a> */}
+          <button className="works-slide-button-one">Web</button>
+          {/* <a
             href="LINK-TO-CODE-REPOSITORY"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <button className="works-slide-button-two">Code</button>
-          </a>
+          ></a> */}
+          <button className="works-slide-button-two">Code</button>
         </div>
       ),
     },
-    // Slide 9
+    // Slide 9 - Designs
     {
       content: (
         <div className="slide-content slide-nine">
