@@ -8,13 +8,14 @@ $accent-color: #072534;
 .contacts-page {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
   margin: 0;
 }
 .contacts-box {
   width: auto;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 60px; 
   text-align: center;
   padding: 60px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,9 +103,13 @@ $accent-color: #072534;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
 
-    @media (max-width: 430px) {
+ @media (max-width: 600px) {
       font-size: .9em;
-      padding: 0 28px;
+      padding: 0 48px;
+    }
+    @media (max-width: 390px) {
+      font-size: 0.8em;
+      padding: 0 40px;
     }
     @media (max-width: 320px) {
       font-size: 0.6em;
@@ -116,6 +121,7 @@ $accent-color: #072534;
 @media (max-width: 600px) {
   .contacts-box {
     width: 95%;
+    padding: 24px;
   }
   .contacts-header {
     font-size: 4em;
