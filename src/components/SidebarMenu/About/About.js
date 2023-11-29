@@ -79,6 +79,7 @@ function About() {
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/758/original/10.png?1686165153"
                   title="Front-End Developer Certificate"
                   className="certificate-img"
+                  alt="certificate"
                 />
               </a>
               <a
@@ -90,6 +91,7 @@ function About() {
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/786/original/8.png?1686168778"
                   title="React Development Certificate"
                   className="certificate-img"
+                  alt="certificate"
                 />
               </a>
               <a
@@ -101,6 +103,7 @@ function About() {
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/787/original/6.png?1686169038"
                   title="Responsive Web Development Certificate"
                   className="certificate-img"
+                  alt="certificate"
                 />
               </a>
               <a
@@ -112,6 +115,7 @@ function About() {
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/788/original/4.png?1686169068"
                   title="Advanced Web Development Certificate"
                   className="certificate-img"
+                  alt="certificate"
                 />
               </a>
               <a
@@ -123,6 +127,7 @@ function About() {
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/157/original/udemy.png?1694132955"
                   title="Full Stack Web Development Certificate"
                   className="certificate-img"
+                  alt="certificate"
                 />
               </a>
             </div>
@@ -141,6 +146,7 @@ function About() {
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/782/original/UI_UX_Designer_Certificate_Tetiana_Korchynska.jpg?1686168107"
                   title="UI/UX Design Certificate"
                   className="certificate-img"
+                  alt="certificate"
                 />
               </a>
               <a
@@ -152,6 +158,7 @@ function About() {
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/783/original/UI_UX_Designer_Certificate_Tetiana_Korchynska_pt1.jpg?1686168113"
                   title="UI/UX Supplement Pt.1"
                   className="certificate-img"
+                  alt="certificate"
                 />
               </a>
               <a
@@ -163,6 +170,7 @@ function About() {
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/784/original/UI_UX_Designer_Certificate_Tetiana_Korchynska_pt2.jpg?1686168119"
                   title="UI/UX Supplement Pt.2"
                   className="certificate-img"
+                  alt="certificate"
                 />
               </a>
             </div>
