@@ -39,7 +39,7 @@
   z-index: 1000;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 430px) {
   .about-page {
     padding: 32px 8px 80px 8px;
   }
