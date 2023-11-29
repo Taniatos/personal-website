@@ -5,11 +5,12 @@ function Experience() {
   return (
     <div className="experience-page">
       <h1 className="experience-page-header">Relevant work experience</h1>
-      <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
+      <div className="accordion" id="accordionPanelsStayOpenExample">
+        {/* Junior Front-End Developer */}
+        <div className="accordion-item">
+          <h2 className="accordion-header">
             <button
-              class="accordion-button"
+              className="accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#panelsStayOpen-collapseOne"
@@ -21,9 +22,9 @@ function Experience() {
           </h2>
           <div
             id="panelsStayOpen-collapseOne"
-            class="accordion-collapse collapse show"
+            className="accordion-collapse collapse show"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <a
                 href="https://www.wikibusines.com/"
                 target="_blank"
@@ -51,10 +52,11 @@ function Experience() {
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
+        {/* HR & Reputation Manager */}
+        <div className="accordion-item">
+          <h2 className="accordion-header">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#panelsStayOpen-collapseTwo"
@@ -66,9 +68,9 @@ function Experience() {
           </h2>
           <div
             id="panelsStayOpen-collapseTwo"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <a
                 href="https://trionika.com/"
                 target="_blank"
@@ -108,10 +110,11 @@ function Experience() {
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
+        {/* Customer Support Representative */}
+        <div className="accordion-item">
+          <h2 className="accordion-header">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#panelsStayOpen-collapseThree"
@@ -123,9 +126,9 @@ function Experience() {
           </h2>
           <div
             id="panelsStayOpen-collapseThree"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <a
                 href="https://trionika.com/"
                 target="_blank"
