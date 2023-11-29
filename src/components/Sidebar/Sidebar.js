@@ -33,7 +33,7 @@ const Sidebar = () => {
   return (
     <nav className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       <header>
-        <Link to="/second" className="logo-section">
+        <Link to="/second/about" className="logo-section">
           {isCollapsed ? (
             <span className="logo-text-collapsed">TK</span>
           ) : (

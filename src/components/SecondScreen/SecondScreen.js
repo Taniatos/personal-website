@@ -22,11 +22,6 @@ const SecondScreen = () => {
           <Route path="/experience" element={<Experience />} />
         </Routes>
       </div>
-      {isBasePath && (
-        <div className="main-content">
-          <h1>hello</h1>
-        </div>
-      )}
     </div>
   );
 };

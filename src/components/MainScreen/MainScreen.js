@@ -44,7 +44,7 @@ const MainScreen = () => {
       <h3 className={`home-h3 ${animateH3 ? "animate" : ""}`}>
         Front-End Developer & UI/UX Designer
       </h3>
-      <Link to="/second">
+      <Link to="/second/about">
         <button
           className={`home-btn ${animateBtn ? "animate" : ""}`}
           id="animated-btn"
