@@ -39,9 +39,19 @@
   z-index: 1000;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 540px) {
   .about-page {
     padding: 32px 8px 80px 8px;
+  }
+  .certificates-box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p-about {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
