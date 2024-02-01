@@ -34,6 +34,12 @@
   text-decoration: none;
   font-size: xx-large;
   cursor: pointer;
+  transition: all ease-in-out 0.4ms;
+}
+.experience-company-name:hover {
+  color: #0a2d40;
+  font-weight: 700;
+
 }
 .experience-years {
   color: #4b565c;
