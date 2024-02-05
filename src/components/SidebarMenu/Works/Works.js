@@ -14,7 +14,6 @@ function Works() {
   // Minimum swipe distance
   const minSwipeDistance = 50;
 
-  
   const slides = [
     // Slide 1 - Face Recognition
     {
@@ -22,7 +21,7 @@ function Works() {
         <div className="slide-content slide-one">
           <img
             className="works-images image-one"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/084/original/visioquest.png?1701044250"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/638/original/visioquest.png?1707011033"
             alt="First slide"
           />
           <p className="works-slide-header">VisioQuest App</p>
@@ -38,7 +37,7 @@ function Works() {
             <button className="works-slide-button-one">Web</button>
           </a>
           <a
-            href="https://github.com/Taniatos/face-recognition-app-visioquest"
+            href="https://github.com/Taniatos/visioquest-public.git"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -248,11 +247,12 @@ function Works() {
           />
           <p className="works-slide-header">Charitable Foundation Website</p>
           <p className="works-slide-description">
-            The project is currently <span className="works-slide-span">in progress</span>. It will be
-            serving as a virtual representation of Andrii Kviatkovskii Charitable
-            Foundation to help raise money for the military and humanitarian
-            purposes of the Armed Forces of Ukraine and families affected by the
-            ongoing war.
+            The project is currently{" "}
+            <span className="works-slide-span">in progress</span>. It will be
+            serving as a virtual representation of Andrii Kviatkovskii
+            Charitable Foundation to help raise money for the military and
+            humanitarian purposes of the Armed Forces of Ukraine and families
+            affected by the ongoing war.
           </p>
 
           {/* <a
@@ -297,7 +297,6 @@ function Works() {
     },
   ];
 
- 
   const goToPrevious = () => {
     const isFirstSlide = activeIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : activeIndex - 1;
