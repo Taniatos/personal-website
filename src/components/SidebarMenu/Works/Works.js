@@ -99,7 +99,7 @@ function Works() {
             <button className="works-slide-button-one">Web</button>
           </a>
           <a
-            href="https://github.com/Taniatos/weather-app-react"
+            href="https://github.com/Taniatos/weather-app-public.git"
             target="_blank"
             rel="noopener noreferrer"
           >
