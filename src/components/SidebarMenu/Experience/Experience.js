@@ -46,6 +46,56 @@ function Experience() {
                   worked closely with a team to execute design and functionality
                   specifications effectively
                 </li>
+                <li className="experience-li">
+                  implemented updates and maintenance for the website in
+                  alignment with the preferences and directives of the CHAD
+                  Foundation owner additionally making UI/UX design decisions
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* AI Trainer - Web Developer */}
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              AI Trainer - Web Developer
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            className="accordion-collapse collapse"
+          >
+            <div className="accordion-body">
+              <a
+                href="https://www.remotasks.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="experience-company-name"
+              >
+                Remotasks
+              </a>
+              <h5 className="experience-years">February, 2024 - ongoing</h5>
+              <ul className="experience-ul">
+                <li className="experience-li">
+                  leveraged my expertise in Web Development, Psychology, and
+                  English Language & Literature to provide artificial
+                  intelligence with complex questions and tasks, ensuring its
+                  multifaceted development
+                </li>
+                <li className="experience-li">
+                  conducted detailed evaluations of the colleague's inputs and
+                  AI-completed tasks, delivering comprehensive feedback, and
+                  making suggestions for improvements in task design and
+                  execution
+                </li>
               </ul>
             </div>
           </div>
@@ -57,15 +107,15 @@ function Experience() {
               className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo"
+              data-bs-target="#panelsStayOpen-collapseThree"
               aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseTwo"
+              aria-controls="panelsStayOpen-collapseThree"
             >
               Junior Front-End Developer
             </button>
           </h2>
           <div
-            id="panelsStayOpen-collapseTwo"
+            id="panelsStayOpen-collapseThree"
             className="accordion-collapse collapse"
           >
             <div className="accordion-body">
@@ -77,7 +127,7 @@ function Experience() {
               >
                 Wikibusines
               </a>
-              <h5 className="experience-years">Jun 2023 - present</h5>
+              <h5 className="experience-years">Jun 2023 - March, 2024</h5>
               <ul className="experience-ul">
                 <li className="experience-li">
                   contributed to the development of client websites and landing
@@ -102,15 +152,15 @@ function Experience() {
               className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree"
+              data-bs-target="#panelsStayOpen-collapseFour"
               aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree"
+              aria-controls="panelsStayOpen-collapseFour"
             >
               HR & Reputation Manager
             </button>
           </h2>
           <div
-            id="panelsStayOpen-collapseThree"
+            id="panelsStayOpen-collapseFour"
             className="accordion-collapse collapse"
           >
             <div className="accordion-body">
@@ -158,15 +208,15 @@ function Experience() {
               className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseFour"
+              data-bs-target="#panelsStayOpen-collapseFive"
               aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseFour"
+              aria-controls="panelsStayOpen-collapseFive"
             >
               Customer Support Representative
             </button>
           </h2>
           <div
-            id="panelsStayOpen-collapseFour"
+            id="panelsStayOpen-collapseFive"
             className="accordion-collapse collapse"
           >
             <div className="accordion-body">
