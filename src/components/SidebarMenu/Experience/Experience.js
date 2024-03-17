@@ -33,7 +33,7 @@ function Experience() {
               >
                 The Chad Foundation
               </a>
-              <h5 className="experience-years">Dec 2023 - present</h5>
+              <h5 className="experience-years">Nov 2023 - present</h5>
               <ul className="experience-ul">
                 <li className="experience-li">
                   developed The CHAD's website using React
