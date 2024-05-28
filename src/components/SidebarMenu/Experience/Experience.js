@@ -75,12 +75,12 @@ function Experience() {
           >
             <div className="accordion-body">
               <a
-                href="https://www.remotasks.com/"
+                href="https://outlier.ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="experience-company-name"
               >
-                Remotasks
+                Outlier
               </a>
               <h5 className="experience-years">February, 2024 - ongoing</h5>
               <ul className="experience-ul">
