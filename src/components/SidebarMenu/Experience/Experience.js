@@ -85,10 +85,9 @@ function Experience() {
               <h5 className="experience-years">February, 2024 - ongoing</h5>
               <ul className="experience-ul">
                 <li className="experience-li">
-                  leveraged my expertise in Web Development, Psychology, and
-                  English Language & Literature to provide artificial
-                  intelligence with complex questions and tasks, ensuring its
-                  multifaceted development
+                  facilitated Genesis AI's multifaceted development by
+                  leveraging my web development expertise in creating complex
+                  tasks for the model's training, ensuring its development
                 </li>
                 <li className="experience-li">
                   conducted detailed evaluations of the colleague's inputs and
@@ -135,7 +134,7 @@ function Experience() {
                   and components (HTML, CSS, JS, React)
                 </li>
                 <li className="experience-li">
-                  collaborated with the team to enhance website functionality
+                  collaborated with the team to improve website functionality
                   and user experience
                 </li>
                 <li className="experience-li">
