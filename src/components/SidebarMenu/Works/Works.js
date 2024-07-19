@@ -173,86 +173,104 @@ function Works() {
       ),
     },
     // Slide 6 - Travel
-    {
-      content: (
-        <div className="slide-content slide-six">
-          <img
-            className="works-images image-six"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/079/original/travel.png?1701043459"
-            alt="Sixth slide"
-          />
-          <p className="works-slide-header">City Landing Page</p>
-          <p className="works-slide-description">
-            Built using HTML, CSS, and Bootstrap, the project aims to
-            demonstrate Responsive Web Design techniques.
-          </p>
+    // {
+    //   content: (
+    //     <div className="slide-content slide-six">
+    //       <img
+    //         className="works-images image-six"
+    //         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/079/original/travel.png?1701043459"
+    //         alt="Sixth slide"
+    //       />
+    //       <p className="works-slide-header">City Landing Page</p>
+    //       <p className="works-slide-description">
+    //         Built using HTML, CSS, and Bootstrap, the project aims to
+    //         demonstrate Responsive Web Design techniques.
+    //       </p>
 
-          <a
-            href="https://travel-project-by-tetiana.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="works-slide-button-one">Web</button>
-          </a>
-          <a
-            href="https://github.com/Taniatos/travel-project"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="works-slide-button-two">Code</button>
-          </a>
-        </div>
-      ),
-    },
+    //       <a
+    //         href="https://travel-project-by-tetiana.netlify.app/"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <button className="works-slide-button-one">Web</button>
+    //       </a>
+    //       <a
+    //         href="https://github.com/Taniatos/travel-project"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <button className="works-slide-button-two">Code</button>
+    //       </a>
+    //     </div>
+    //   ),
+    // },
     // Slide 7 - World Clock
-    {
-      content: (
-        <div className="slide-content slide-seven">
-          <img
-            className="works-images image-seven"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/077/original/clock.png?1701043440"
-            alt="Seventh slide"
-          />
-          <p className="works-slide-header">World Clock App</p>
-          <p className="works-slide-description">
-            The project was built using HTML, CSS, JavaScript and real-life data
-            from Moment.js.
-          </p>
+    // {
+    //   content: (
+    //     <div className="slide-content slide-seven">
+    //       <img
+    //         className="works-images image-seven"
+    //         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/077/original/clock.png?1701043440"
+    //         alt="Seventh slide"
+    //       />
+    //       <p className="works-slide-header">World Clock App</p>
+    //       <p className="works-slide-description">
+    //         The project was built using HTML, CSS, JavaScript and real-life data
+    //         from Moment.js.
+    //       </p>
 
-          <a
-            href="https://world-clock-projectbytania.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="works-slide-button-one">Web</button>
-          </a>
-          <a
-            href="https://github.com/Taniatos/world-clock-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="works-slide-button-two">Code</button>
-          </a>
-        </div>
-      ),
-    },
+    //       <a
+    //         href="https://world-clock-projectbytania.netlify.app/"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <button className="works-slide-button-one">Web</button>
+    //       </a>
+    //       <a
+    //         href="https://github.com/Taniatos/world-clock-app"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <button className="works-slide-button-two">Code</button>
+    //       </a>
+    //     </div>
+    //   ),
+    // },
     // Slide 8 - Charitable
     {
       content: (
         <div className="slide-content slide-eight">
           <img
             className="works-images image-eight"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/085/original/charitable.png?1701044795"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/389/original/charitable.png?1721422075"
             alt="Eighth slide"
           />
-          <p className="works-slide-header">Charitable Foundation Website</p>
+          <p className="works-slide-header">Chad Foundation Website</p>
           <p className="works-slide-description">
             The project is currently{" "}
-            <span className="works-slide-span">in progress</span>. It will be
-            serving as a virtual representation of Andrii Kviatkovskii
-            Charitable Foundation to help raise money for the military and
-            humanitarian purposes of the Armed Forces of Ukraine and families
-            affected by the ongoing war.
+            <span className="works-slide-span">in progress</span>. It will be a
+            fully functioning website of The Chad Foundation for Athletes and
+            Artists to help raise awareness of heart related abnormalities,
+            promote heart-healthy living, detect heart anomalies, prevent
+            Sudden Cardiac Death, and more. Check out more information at{" "}
+            <a
+              href="https://www.linkedin.com/company/thechadfoundationforathletesandartists/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chad-links"
+            >
+              LinkedIn
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://www.youtube.com/watch?v=zt6H5ZlXRd8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chad-links"
+            >
+              Youtube
+            </a>
+            .
           </p>
 
           {/* <a
