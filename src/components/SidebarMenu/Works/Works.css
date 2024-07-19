@@ -118,6 +118,11 @@
 .works-slide-span {
   font-weight: 600;
 }
+.chad-links{
+    text-decoration: none;
+    color: #174964;
+    font-weight: 600;
+}
 @media (min-width: 1160px) {
   .works-images {
     width: 500px;
