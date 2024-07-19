@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
 
-
 function About() {
   return (
     <div className="about-page">
@@ -11,23 +10,26 @@ function About() {
         <div className="row">
           <div className="col-md-6">
             <p className="p-about">
-              I am a Front-End Developer with more than one year of experience,
-              complemented by a six-year background in the IT industry,
-              including roles from Customer Support Representative to HR &
-              Reputation Manager. This diverse background has given me a broad
-              perspective on different aspects of technology and user
-              engagement.
+              I am a Front-End Developer with over 7 years in the IT industry,
+              including 2 years specializing in coding. I am now further
+              enhancing my skills as a part-time student in Boston University's
+              MS in Software Development program, one of the top 100
+              universities globally. This program provides me with a highly
+              demanded knowledge of computer language theory, algorithms,
+              databases, networks, security, operating systems, and software
+              development.
             </p>
           </div>
 
           <div className="col-md-6">
             <p className="p-about">
-              Alongside my front-end development skills, I have a strong
-              foundation in UI/UX Design. I believe that understanding both is
-              essential for creating effective and responsive websites. This
-              combination of skills enables me to develop websites that are not
-              only visually appealing but also provide an excellent user
-              experience for the customers.
+              Alongside my programming skills, I have a strong foundation in
+              UI/UX Design. This combination of skills enables me to develop
+              websites that are not only visually appealing but also provide an
+              excellent user experience for the customers. My true passion lies
+              in utilizing all my combined commercial experience and academic
+              knowledge to build the most effective user interfaces and web
+              applications.
             </p>
           </div>
         </div>
@@ -39,11 +41,11 @@ function About() {
             </div>
             <div className="p-about-skills-div">
               <p className="p-about-skills">
-                HTML, CSS/SCSS, JavaScript, DOM Manipulation, React, Redux
-                Basics, Back-End Basics, API, GitHub, Bootstrap, Hosting,
-                Flexbox, Responsive Web Design, Figma, Adobe Photoshop, Adaptive
-                Design, UI Design, UX Research, CJM, User Flows, Wireframing,
-                Prototyping
+                JavaScript, React.js, Node.js, Typescript, Python, HTML, CSS /
+                SCSS, Responsive Web Design, Figma, UI/UX Design, UX Research,
+                CJM, User Flows, Wireframing, Prototyping, GitHub, Bootstrap,
+                Hosting, Visual Studio, Anaconda Navigator, Spyder IDE, Jira,
+                Slack, Discourse, Discord
               </p>
             </div>
           </div>
