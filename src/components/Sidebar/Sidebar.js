@@ -7,6 +7,7 @@ import {
   faPaperPlane,
   faLaptopCode,
   faBriefcase,
+  faComment,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Sidebar.css";
 
@@ -72,10 +73,18 @@ const Sidebar = () => {
         >
           <Link to="/second/works">
             <FontAwesomeIcon icon={faLaptopCode} className="menu-icon" />
-            {!isCollapsed && "Works"}
+            {!isCollapsed && "Projects"}
           </Link>
         </li>
-
+        <li
+          className={isActive("references")}
+          onClick={() => handleMenuItemClick("references")}
+        >
+          <Link to="/second/references">
+            <FontAwesomeIcon icon={faComment} className="menu-icon" />
+            {!isCollapsed && "References"}
+          </Link>
+        </li>
         <li
           className={isActive("contacts")}
           onClick={() => handleMenuItemClick("contacts")}
