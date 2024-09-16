@@ -76,7 +76,7 @@ const Sidebar = () => {
             {!isCollapsed && "Projects"}
           </Link>
         </li>
-        <li
+        {/* <li
           className={isActive("references")}
           onClick={() => handleMenuItemClick("references")}
         >
@@ -84,7 +84,7 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faComment} className="menu-icon" />
             {!isCollapsed && "References"}
           </Link>
-        </li>
+        </li> */}
         <li
           className={isActive("contacts")}
           onClick={() => handleMenuItemClick("contacts")}
