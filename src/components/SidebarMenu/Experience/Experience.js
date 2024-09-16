@@ -171,7 +171,7 @@ function Experience() {
               >
                 Trionika
               </a>
-              <h5 className="experience-years">Feb 2019 - Apr 2023</h5>
+              <h5 className="experience-years">Feb 2019 - Jul 2022</h5>
               <ul className="experience-ul">
                 <li className="experience-li">
                   recruited and searched for new partners for specific projects
