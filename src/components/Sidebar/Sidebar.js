@@ -7,7 +7,7 @@ import {
   faPaperPlane,
   faLaptopCode,
   faBriefcase,
-  faComment,
+  // faComment,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Sidebar.css";
 
